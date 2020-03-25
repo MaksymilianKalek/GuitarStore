@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const passport = require("passport");
+const fs = require("fs");
 
 //User model
 const User = require("../models/User");
@@ -109,6 +110,11 @@ router.get("/logout", (req, res) => {
 	req.logout();
 	req.flash("success_msg", "You are logged out");
 	res.redirect("/users/login");
+});
+
+router.post("/sendContact", (req, res) => {
+	req.flash("success_msg", "Your message has been sent");
+	res.redirect("/contact");
 });
 
 module.exports = router;
