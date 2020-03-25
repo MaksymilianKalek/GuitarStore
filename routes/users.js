@@ -112,7 +112,21 @@ router.get("/logout", (req, res) => {
 	res.redirect("/users/login");
 });
 
+
+//Contact handler
+
 router.post("/sendContact", (req, res) => {
+	const {
+		name,
+		email,
+		message
+	} = req.body;
+
+	fs.writeFile(`./messages/messageFrom${name}.txt`, `Sender: ${name}\nEmail: ${email}\nMessage: ${message}`, (err) => {
+		if (err) throw err;
+		console.log("File created");
+	});
+
 	req.flash("success_msg", "Your message has been sent");
 	res.redirect("/contact");
 });

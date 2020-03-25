@@ -52,24 +52,24 @@
                 <fieldset>
                     <div class="form-group">
                         <fieldset>
-                            <label class="control-label" for="readOnlyInput">Your Name</label>
-                            <input class="form-control text-center" id="readOnlyInput" type="text"
-                                placeholder="<%= name %>" readonly="">
+                            <label class="control-label" for="name">Your Name</label>
+                            <input class="form-control text-center" name="name" id="name" type="text"
+                                placeholder="<%= name %>" value="<%= name %>">
                         </fieldset>
                     </div>
                     <div class="form-group">
                         <fieldset>
-                            <label class="control-label" for="readOnlyInput">Your Email</label>
-                            <input class="form-control text-center" id="readOnlyInput" type="text"
-                                placeholder="<%= email %>" readonly="">
+                            <label class="control-label" for="email">Your Email</label>
+                            <input class="form-control text-center" name="email" id="email" type="text"
+                                placeholder="<%= email %>" value="<%= email %>">
                         </fieldset>
                     </div>
                     <div class="form-group">
-                        <label for="exampleTextarea">Your Message</label>
-                        <textarea class="form-control" id="exampleTextarea" placeholder="Enter your message to our team"
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message to our team"
                             rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn btn-primary btn-block">Send</button>
                 </fieldset>
             </form>
         </div>
