@@ -1,4 +1,4 @@
 node_modules/
 config/keys.js
-messages/messageFromKlaudia.txt
-messages/messageFromMaks Kalek.txt
+messages/*
+!messages/.gitkeep 
