@@ -1,4 +1,2 @@
 node_modules/
 config/keys.js
-messages/*
-!messages/.gitkeep 
