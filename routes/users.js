@@ -114,7 +114,6 @@ router.get("/logout", (req, res) => {
 
 
 //Contact handler
-
 router.post("/sendContact", (req, res) => {
 	const {
 		name,
@@ -131,7 +130,7 @@ router.post("/sendContact", (req, res) => {
 	res.redirect("/contact");
 });
 
-//Checkout hanlder
+//Checkout handler
 router.post("/buy", (req, res) => {
 	const {
 		name,

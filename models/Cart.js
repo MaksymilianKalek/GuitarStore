@@ -22,7 +22,7 @@ module.exports = function Cart(cart) {
     
     this.getItems = function() {
         let arr = [];
-        for (var id in this.items) {
+        for (let id in this.items) {
             arr.push(this.items[id]);
         }
         return arr;
