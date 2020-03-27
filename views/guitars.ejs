@@ -34,7 +34,7 @@
             <%= name %>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Saved gear</a>
+            <a class="dropdown-item" href="/cart">Your cart</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/users/logout">Logout</a>
           </div>
@@ -42,277 +42,38 @@
       </ul>
     </div>
   </nav>
-  <br><br><br>
+  <br><br><br><br><br><br>
   <div class="container-fluid">
-    <div class="row guitarow" style="margin-top: 0;">
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g1.png" class="card-img-top mt-3" alt="...">
+    <% products.forEach(guitar => { %>
+    <% if (guitar.id < 100) { %>
+    <div class="row justify-content-center" style="margin-top: 0;">
+      <div class="col-md-8 text-center">
+        <div class="card mt-1">
+          <img src="<%= guitar.photo %>" class="card-img-top mt-3 mx-auto" alt="..."
+            style="max-width: 29.8rem; max-height: 11.84rem;">
           <div class="card-body">
-            <h5 class="card-title">Skervesen Raptor 6</h5>
-            <h6 class="card-text">2,269€</h6>
-            <p class="card-text">Raptor 6 is available either as NTB or bolt-on contruction. Raptor is our most popular
-              model. It is a very versatile instrument of classic design. With wide array of option available it may
-              become what any player seeks for himself.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g2.png" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Skervesen Raptor 7</h5>
-            <h6 class="card-text">2,320€</h6>
-            <p class="card-text">Raptor 7 is available either as NTB or bolt-on contruction. Raptor is our most popular
-              model, a vary versatile instrument of classic design. With wide array of option available it may become
-              what any player seeks for himself.</p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g3.png" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Skervesen Raptor 7</h5>
-            <h6 class="card-text">2,519€</h6>
-            <p class="card-text">Raptor 8 is available either as NTB or bolt-on contruction. Raptor is our most popular
-              model. It is a very versatile instrument of classic design. With wide array of option available it may
-              become what any player seeks for himself.</p>
-
+            <div class="caption">
+              <h5 class="card-title"><%= guitar.name %></h5>
+              <p class="card-text"><%= guitar.description %></p>
+              <div class="clearfix">
+                <div class="price pull-left"><i class="fa fa-tag" aria-hidden="true"></i> <%= guitar.price %> €</div>
+                <a href="/add/<%= guitar.id %>" class="btn btn-default pull-right" role="button"><i
+                    class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <br><br>
+    <% } %>
+    <% }); %>
+  </div>
 
-    <br>
-
-    <div class="row guitarow">
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g4.png" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Skervesen Mirage 7</h5>
-            <h6 class="card-text">2,610€</h6>
-            <p class="card-text">We would like to introduce a new model for 2018 Mirage. It is a nod to more versatile
-              and balanced approach in terms of tone and design. Mirage is a fusion of our most successful solutions
-              with guitarwork’s legacy.</p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g5.png" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Skervesen Shoggie 6 DC Bolt-on</h5>
-            <h6 class="card-text">2,349€</h6>
-            <p class="card-text">Shoggie 6 DC Bolt-on is a very lightweight, ergonomic and elegant guitar. It’s small
-              appearance conceals a huge spirit. We don’t offer chambering for this model. Available as bolt-on
-              construction.</p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g6.png" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Skervesen Shoggie DC 7 Bolt-on</h5>
-            <h6 class="card-text">2,469€</h6>
-            <p class="card-text">Shoggie DC 7 Bolt-on is a very lightweight, ergonomic and elegant guitar. It’s small
-              appearance conceals a huge spirit. We don’t offer chambering for this model. Available as bolt-on
-              construction.</p>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="row guitarow">
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g7.png" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Skervesen Shoggie DC 8 Bolt-on</h5>
-            <h6 class="card-text">2,669€</h6>
-            <p class="card-text">Shoggie DC 8 Bolt-on is a very lightweight, ergonomic and elegant guitar. It’s small
-              appearance conceals a huge spirit. We don’t offer chambering for this model. Available as bolt-on
-              construction.</p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g8.png" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Skervesen Shoggie 6/7/8 DC Neck-thru</h5>
-            <h6 class="card-text">2,800€</h6>
-            <p class="card-text">Available as NTB construction. A very lightweight, ergonomic and elegant guitar. It’s
-              small appearance conceals a huge spirit. We don’t offer chambering for this model.</p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g9.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mayones Duvell Elite V-Frets 7</h5>
-            <h6 class="card-text">2,120€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Hipshot Multi-Scale Fixed<br>
-              Frets Guitar Multiscale 25,4" - 27" (645 - 687 mm)
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="row guitarow">
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g10.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mayones Duvell Elite V-Frets 6</h5>
-            <h6 class="card-text">2,020€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Hipshot Multi-Scale Fixed<br>
-              Frets Guitar Multiscale 25,4" - 27" (645 - 687 mm)
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g11.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mayones Duvell Elite PRO 6</h5>
-            <h6 class="card-text">2,410€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Schaller LockMeister® tremolo bridge<br>
-              25,4" (645 mm)</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g12.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mayones Duvell Elite PRO 7</h5>
-            <h6 class="card-text">2,520€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Original Floyd Rose 7<br>
-              25,4" (645 mm)</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="row guitarow">
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g13.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mayones Duvell Elite 6</h5>
-            <h6 class="card-text">2,000€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Hipshot 6 String Fixed<br>
-              25,4" (645 mm) or 27" (687 mm) – baritone</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g14.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mayones Duvell Elite 7</h5>
-            <h6 class="card-text">2,100€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Hipshot 7 String Fixed Guitar Bridge<br>
-              25,4" (645 mm) or 27" (687 mm) – baritone</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g15.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Regius 6</h5>
-            <h6 class="card-text">2,000€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Hipshot 6 String Fixed Guitar Bridge<br>
-              25.4″ (645mm) or 27" (687 mm) - baritone or 28" (711 mm) - baritone</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="row guitarow">
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g16.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mayones Regius 7</h5>
-            <h6 class="card-text">2,100€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Hipshot 7 String Fixed Guitar Bridge<br>
-              25.4″ (645mm) or 27" (687 mm) - baritone or 28" (711 mm) - baritone</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g18.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mayones Regius 8</h5>
-            <h6 class="card-text">2,200€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Hipshot 8 String Fixed Guitar Bridge<br>
-              27" (687 mm) - baritone or 28" (711 mm) - baritone</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mt-5">
-          <img src="guitars/g17.jpg" class="card-img-top mt-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Skervesen Raptor 7</h5>
-            <h6 class="card-text">2,320€</h6>
-            <p class="card-text">H-H / Mayones TKO by Bare Knuckle<br>
-              Hipshot 7 String Fixed Guitar Bridge<br>
-              25.4″ (645mm) or 27" (687 mm) - baritone or 28" (711 mm) - baritone</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <nav class="navbar navbar-primary bg-light mt-5 justify-content-center">
-      <a href="#top"><span class="navbar-text">
-          Copyright © 2020 by Maks Guitar Store. No rights reserved.
-        </span></a>
-    </nav>
+  <nav class="navbar navbar-primary bg-light mt-5 justify-content-center">
+    <a href="#top"><span class="navbar-text">
+        Copyright © 2020 by Maks Guitar Store. No rights reserved.
+      </span></a>
+  </nav>
   </div>
 </body>

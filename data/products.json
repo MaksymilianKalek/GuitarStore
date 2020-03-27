@@ -1,0 +1,183 @@
+[{
+    "id": 1,
+    "name": "Skervesen Raptor 6",
+    "description": "Raptor 6 is available either as NTB or bolt-on contruction. Raptor is our most popular model. It is a very versatile instrument of classic design. With wide array of option available it maybecome what any player seeks for himself.",
+    "price": 2269,
+    "photo": "guitars/g1.png"
+  },
+  {
+    "id": 2,
+    "name": "Skervesen Raptor 7",
+    "description": "Raptor 7 is available either as NTB or bolt-on contruction. Raptor is our most popular model.It is a very versatile instrument of classic design.With wide array of option available it may become what any player seeks for himself.",
+    "price": 2320,
+    "photo": "guitars/g2.png"
+  },
+  {
+    "id": 3,
+    "name": "Skervesen Raptor 8",
+    "description": "Raptor 8 is available either as NTB or bolt-on contruction. Raptor is our most popular model.It is a very versatile instrument of classic design.With wide array of option available it may become what any player seeks for himself.",
+    "price": 2519,
+    "photo": "guitars/g3.png"
+  },
+  {
+    "id": 4,
+    "name": "Skervesen Mirage 7",
+    "description": "We would like to introduce a new model for 2018 Mirage. It is a nod to more versatile and balanced approach in terms of tone and design. Mirage is a fusion of our most successful solutions with guitarwork’s legacy.",
+    "price": 2610,
+    "photo": "guitars/g4.png"
+  },
+  {
+    "id": 5,
+    "name": "Skervesen Shoggie 6 DC Bolt-on",
+    "description": "Shoggie 6 DC Bolt-on is a very lightweight, ergonomic and elegant guitar. It’s small appearance conceals a huge spirit. We don’t offer chambering for this model. Available as bolt-on construction.",
+    "price": 2349,
+    "photo": "guitars/g5.png"
+  },
+  {
+    "id": 6,
+    "name": "Skervesen Shoggie DC 7 Bolt-on",
+    "description": "Shoggie DC 7 Bolt-on is a very lightweight, ergonomic and elegant guitar. It’s small appearance conceals a huge spirit. We don’t offer chambering for this model. Available as bolt-on construction.",
+    "price": 2469,
+    "photo": "guitars/g6.png"
+  },
+  {
+    "id": 7,
+    "name": "Skervesen Shoggie DC 8 Bolt-on",
+    "description": "Shoggie DC 8 Bolt-on is a very lightweight, ergonomic and elegant guitar. It’s small appearance conceals a huge spirit. We don’t offer chambering for this model. Available as bolt-on construction.",
+    "price": 2669,
+    "photo": "guitars/g7.png"
+  },
+  {
+    "id": 8,
+    "name": "Skervesen Shoggie 6/7/8 DC Neck-thru",
+    "description": "Available as NTB construction. A very lightweight, ergonomic and elegant guitar. It’s small appearance conceals a huge spirit. We don’t offer chambering for this model.",
+    "price": 2800,
+    "photo": "guitars/g8.png"
+  },
+  {
+    "id": 9,
+    "name": "Mayones Duvell Elite V-Frets 7",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Hipshot Multi-Scale Fixed Frets || Multiscale 25,4\" - 27\" (645 - 687 mm)",
+    "price": 2120,
+    "photo": "guitars/g9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Mayones Duvell Elite V-Frets 6",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Hipshot Multi-Scale Fixed || Multiscale 25,4\" - 27\" (645 - 687 mm)",
+    "price": 2020,
+    "photo": "guitars/g10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Mayones Duvell Elite PRO 6",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Schaller LockMeister® tremolo bridge || Multiscale 25,4\" (645mm)",
+    "price": 2410,
+    "photo": "guitars/g11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Mayones Duvell Elite PRO 7",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Original Floyd Rose 7 || 25,4\" (645mm)",
+    "price": 2520,
+    "photo": "guitars/g12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Mayones Duvell Elite 6",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Hipshot 6 String Fixed || 25,4\" (645 mm) or 27\" (687 mm) – baritone",
+    "price": 2000,
+    "photo": "guitars/g13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Mayones Duvell Elite 7",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Hipshot 7 String Fixed Guitar Bridge || 25,4\" (645 mm) or 27\" (687 mm) – baritone",
+    "price": 2100,
+    "photo": "guitars/g14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Mayones Regius 6",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Hipshot 6 String Fixed Guitar Bridge || 25,4\" (645 mm) or 27\" (687 mm) - baritone or 28\" (711 mm) - baritone",
+    "price": 2000,
+    "photo": "guitars/g15.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Mayones Regius 7",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Hipshot 7 String Fixed Guitar Bridge || 25,4\" (645 mm) or 27\" (687 mm) - baritone or 28\" (711 mm) - baritone",
+    "price": 2100,
+    "photo": "guitars/g16.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Mayones Regius 8",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Hipshot 8 String Fixed Guitar Bridge || 25,4\" (645 mm) or 27\" (687 mm) - baritone or 28\" (711 mm) - baritone",
+    "price": 2200,
+    "photo": "guitars/g17.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Regius Core Classic 7",
+    "description": "H-H / Mayones TKO by Bare Knuckle || Hipshot 7 String Fixed Guitar Bridge || 25,4\" (645 mm) or 27\" (687 mm) - baritone or 28\" (711 mm) - baritone",
+    "price": 2320,
+    "photo": "guitars/g18.jpg"
+  },
+  {
+    "id": 101,
+    "name": "Line 6 HX Stomp",
+    "description": "Multi-effect processor with the helix sound || Over 300 effects and models from the Helix, M series and other Line6 products || 6 Simultaneously usable amplifiers, boxes and effect blocks - including looper and IR loading || Coloured LC display || Integrated audio interface || 3 Footswitches with colour-coded LED rings",
+    "price": 569,
+    "photo": "amps/a1.png"
+  },
+  {
+    "id": 102,
+    "name": "Line 6 Helix LT",
+    "description": "Next generation of Dual DSP-based HX Modeling Engine with 4 discrete stereo signal paths || 50 Guitar amplifiers || 12 Bass amplifiers || 37 Cabs || 16 Microphones || 104 Effects || Imports IRs (impulse responses) up to 1024/2048 sample lengths || 12 touch-sensitive foot switches || Pedal Edit Mode for freehand editing",
+    "price": 888,
+    "photo": "amps/a2.png"
+  },
+  {
+    "id": 103,
+    "name": "Line 6 Helix",
+    "description": "Next generation dual DSP based HX Modeling Engine with 4 discret stereo-signal paths || 50 Guitar amp models, 12 bass amp models, 37 speakers, 16 microphones and 104 effects || Imported IRs (impulse responses) with up to 1024 / 2048 samples || 12 Pressure sensitive foot switches for editing || The Hands Free Pedal Edit mode sets the effects parameters onto the switch and expression pedal",
+    "price": 1500,
+    "photo": "amps/a3.jpg"
+  },
+  {
+    "id": 104,
+    "name": "Line 6 Helix Rack",
+    "description": "Next-generation dual DSP-based HX modeling engine with four discrete stereo signal paths || 45 Amps, 30 speakers, 16 microphones and 70 effects || Imported IRs (impulse responses) with up to 1024/2048 samples || Up to 3 expression pedals || CV / Expression output || Amplifier switching outputs and extensive MIDI control || Extensive inputs and outputs for the seamless integration of the entire rig || 10 Inputs and 12 outputs (including 4 FX loops) || 8 In/8 Out USB Audio Interface",
+    "price": 1299,
+    "photo": "amps/a4.jpg"
+  },
+  {
+    "id": 105,
+    "name": "Fractal Audio Axe-Fx III",
+    "description": "Fractal Audio Systems’ new flagship processor brings more power, features, and upgrades than ever before. The Axe-Fx III is the latest in a line of legends — the world’s most powerful all-in-one processor for guitar, bass, and other instruments. Featuring Fractal Audio's latest amp modeling technology, thousands of UltraRes™ speaker cab simulations, and industry-leading effects, the Axe-Fx III has more raw power and features than any guitar processor ever created.",
+    "price": 2599,
+    "photo": "amps/a5.jpg"
+  },
+  {
+    "id": 106,
+    "name": "Fractal Audio FM3",
+    "description": "Now you can get Fractal Audio’s industry-leading amp and cab modeling, plus a suite of stompbox and studio effects, a powerful foot controller, 4×4 USB audio — and more — all in a compact, rugged, all-in-one, floor unit designed for the studio or stage.",
+    "price": 1200,
+    "photo": "amps/a6.jpg"
+  },
+  {
+    "id": 107,
+    "name": "Kemper Profiler Head",
+    "description": "But what if you want to place the factory sound with your own favourite personal sounds? Before the appearance of the Kemper Profiling Amps there were basically not many alternatives: you could either drag (before the digital revolution) all of your equipment from place to place, or you could do your best to adapt the factory sounds of the modelling amp as much as possible to your own desires.",
+    "price": 1666,
+    "photo": "amps/a7.jpg"
+  },
+  {
+    "id": 108,
+    "name": "Kemper Profiler Stage",
+    "description": "The Kemper Profiling technique allows the creation of a very precise sonic image (profile) of an existing amplifier configuration (including speaker and microphone pickup). Thanks to the many internal editing options, such as various ground effect emulations (up to 4 simultaneously), master effects, equalizers, gain, amp definition, power sagging, etc., you can then edit the created sound far beyond the capabilities of the original amplifier.",
+    "price": 1590,
+    "photo": "amps/a8.jpg"
+  }
+]

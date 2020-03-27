@@ -46,30 +46,61 @@
         <div class="card card-body text-center">
             <h1><img src="/electric-guitar.png" width="150" height="150" class="d-inline-block align-top" alt="">
             </h1>
-            <h3>Contact us</h3>
+            <h3>Finalize your order</h3>
             <%- include('./partials/messages.ejs'); %>
-            <form action="/users/sendContact" method="POST">
+            <form action="/users/buy" method="POST">
                 <fieldset>
                     <div class="form-group">
+                        <ul class="list-group">
+                            <% products.forEach(product => { %>
+                            <li class="list-group-item">
+                                <%= product.item.name %>
+                                <div><%= product.quantity %>x <i class="fa fa-tag" aria-hidden="true"></i>
+                                    <%= product.item.price %> €
+                                </div>
+                            </li>
+                            <% }); %>
+                            <li class="list-group-item">
+                                <div>
+                                    <strong>Total items: <%= totalItems %></strong>
+                                    <br>
+                                    <strong>Total price: <%= totalPrice %> €</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
                         <fieldset>
-                            <label class="control-label" for="name">Your Name</label>
+                            <label class="control-label" for="name">Name</label>
                             <input class="form-control text-center" name="name" id="name" type="text"
                                 placeholder="<%= name %>" value="<%= name %>">
                         </fieldset>
                     </div>
                     <div class="form-group">
                         <fieldset>
-                            <label class="control-label" for="email">Your Email</label>
+                            <label class="control-label" for="email">Email</label>
                             <input class="form-control text-center" name="email" id="email" type="text"
                                 placeholder="<%= email %>" value="<%= email %>">
                         </fieldset>
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Message</label>
+                        <fieldset>
+                            <label class="control-label" for="city">City</label>
+                            <input class="form-control text-center" name="city" id="city" type="text"
+                                placeholder="Your city">
+                        </fieldset>
+                        <fieldset>
+                            <label class="control-label" for="address">Address</label>
+                            <input class="form-control text-center" name="address" id="address" type="text"
+                                placeholder="Your address">
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Other information</label>
                         <textarea class="form-control" id="message" name="message"
                             placeholder="Enter your message to our team" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Send</button>
+                    <button type="submit" class="btn btn-primary btn-block">Purchase</button>
                 </fieldset>
             </form>
         </div>
