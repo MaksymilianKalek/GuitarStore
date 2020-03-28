@@ -8,7 +8,7 @@ It's just a project for educational purposes
 
 - You can create and login into an account stored in an online database
 
-- You can messages through the contact form that are stored in a local file on the server.
+- You can send messages through the contact form that are stored in a local file on the server.
 
 - You can add and remove products to/from your shopping cart
 
