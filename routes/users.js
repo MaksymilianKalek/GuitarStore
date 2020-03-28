@@ -130,23 +130,4 @@ router.post("/sendContact", (req, res) => {
 	res.redirect("/contact");
 });
 
-//Checkout handler
-router.post("/buy", (req, res) => {
-	const {
-		name,
-		email,
-		city,
-		address,
-		message
-	} = req.body;
-
-	fs.writeFile(`./orders/orderFrom${name}.txt`, `Sender: ${name}\nEmail: ${email}\nCity: ${city}\nAddress: ${address}\nOther information: ${message}`, (err) => {
-		if (err) throw err;
-		console.log("File created");
-	});
-
-	req.flash("success_msg", "Your order has been placed");
-	res.redirect("/checkout");
-});
-
 module.exports = router;

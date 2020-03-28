@@ -102,5 +102,38 @@ router.get("/checkout", ensureAuthenticated, (req, res) => {
   });
 });
 
+//Checkout handler
+router.post("/buy", ensureAuthenticated, (req, res) => {
+  const {
+    name,
+    email,
+    city,
+    address,
+    message
+  } = req.body;
+
+  let cart = new Cart(req.session.cart);
+
+  const products = cart.getItems();
+  const totalPrice = cart.totalPrice;
+  const totalItems = cart.totalItems;
+
+  fs.writeFile(`./orders/orderFrom${name}.txt`, `Sender: ${name}\nEmail: ${email}\nCity: ${city}\nAddress: ${address}\nOther information: ${message}\nTotal items: ${totalItems}\nTotal cost: ${totalPrice}€\n`, "utf8", (err) => {
+    if (err) throw err;
+    console.log("File created");
+  });
+
+  let i = 1;
+  products.forEach(product => {
+    fs.appendFile(`./orders/orderFrom${name}.txt`, `\nProduct no.${i}: ${product.item.name} | Quantity: ${product.quantity} | Price: ${product.item.price}`, "utf8", (err) => {
+      if (err) throw err;
+      console.log("Appended to file");
+    });
+    i += 1;
+  });
+
+  req.flash("success_msg", "Your order has been placed");
+  res.redirect("/checkout");
+});
 
 module.exports = router;
