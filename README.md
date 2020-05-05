@@ -13,3 +13,7 @@ It's just a project for educational purposes
 - You can add and remove products to/from your shopping cart
 
 - You can checkout your order which will also be stored in a local file on the server
+
+## You can visit this site here
+
+https://maks-guitar-store.herokuapp.com/
