@@ -1,8 +1,6 @@
 # Maks's Guitar Store website
 
-I do not own any of the media content used on this website
-
-It's just a project for educational purposes
+It's one of my first full-stack, fully functional projects.
 
 ## What is it's usability?
 
@@ -17,3 +15,6 @@ It's just a project for educational purposes
 ## You can visit this site here
 
 https://maks-guitar-store.herokuapp.com/
+
+I do not own any of the media content used on this website
+It's just a project for educational purposes.
